@@ -1,4 +1,5 @@
-# SHA-256 Client-Server System (Progetto didattico per il corso di **Sistemi Operativi** – Università di Verona)
+# SHA-256 Client-Server System 
+### (Progetto didattico per il corso di **Sistemi Operativi** – Università di Verona)
 
 ## Descrizione
 

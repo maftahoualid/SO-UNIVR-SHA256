@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wally/Documenti/sha256_project
+CMAKE_SOURCE_DIR = /home/wally/Documenti/GitHub/SO-UNIVR-SHA256
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wally/Documenti/sha256_project
+CMAKE_BINARY_DIR = /home/wally/Documenti/GitHub/SO-UNIVR-SHA256/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wally/Documenti/sha256_project/CMakeFiles /home/wally/Documenti/sha256_project//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wally/Documenti/GitHub/SO-UNIVR-SHA256/build/CMakeFiles /home/wally/Documenti/GitHub/SO-UNIVR-SHA256/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wally/Documenti/sha256_project/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wally/Documenti/GitHub/SO-UNIVR-SHA256/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -155,6 +155,32 @@ client_control/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_control.dir/build.make CMakeFiles/client_control.dir/build
 .PHONY : client_control/fast
 
+#=============================================================================
+# Target rules for targets named client_status
+
+# Build rule for target.
+client_status: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client_status
+.PHONY : client_status
+
+# fast build rule for target.
+client_status/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_status.dir/build.make CMakeFiles/client_status.dir/build
+.PHONY : client_status/fast
+
+#=============================================================================
+# Target rules for targets named client_shutdown
+
+# Build rule for target.
+client_shutdown: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client_shutdown
+.PHONY : client_shutdown
+
+# fast build rule for target.
+client_shutdown/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_shutdown.dir/build.make CMakeFiles/client_shutdown.dir/build
+.PHONY : client_shutdown/fast
+
 src/client.o: src/client.c.o
 .PHONY : src/client.o
 
@@ -202,6 +228,54 @@ src/client_control.s: src/client_control.c.s
 src/client_control.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_control.dir/build.make CMakeFiles/client_control.dir/src/client_control.c.s
 .PHONY : src/client_control.c.s
+
+src/client_shutdown.o: src/client_shutdown.c.o
+.PHONY : src/client_shutdown.o
+
+# target to build an object file
+src/client_shutdown.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_shutdown.dir/build.make CMakeFiles/client_shutdown.dir/src/client_shutdown.c.o
+.PHONY : src/client_shutdown.c.o
+
+src/client_shutdown.i: src/client_shutdown.c.i
+.PHONY : src/client_shutdown.i
+
+# target to preprocess a source file
+src/client_shutdown.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_shutdown.dir/build.make CMakeFiles/client_shutdown.dir/src/client_shutdown.c.i
+.PHONY : src/client_shutdown.c.i
+
+src/client_shutdown.s: src/client_shutdown.c.s
+.PHONY : src/client_shutdown.s
+
+# target to generate assembly for a file
+src/client_shutdown.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_shutdown.dir/build.make CMakeFiles/client_shutdown.dir/src/client_shutdown.c.s
+.PHONY : src/client_shutdown.c.s
+
+src/client_status.o: src/client_status.c.o
+.PHONY : src/client_status.o
+
+# target to build an object file
+src/client_status.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_status.dir/build.make CMakeFiles/client_status.dir/src/client_status.c.o
+.PHONY : src/client_status.c.o
+
+src/client_status.i: src/client_status.c.i
+.PHONY : src/client_status.i
+
+# target to preprocess a source file
+src/client_status.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_status.dir/build.make CMakeFiles/client_status.dir/src/client_status.c.i
+.PHONY : src/client_status.c.i
+
+src/client_status.s: src/client_status.c.s
+.PHONY : src/client_status.s
+
+# target to generate assembly for a file
+src/client_status.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_status.dir/build.make CMakeFiles/client_status.dir/src/client_status.c.s
+.PHONY : src/client_status.c.s
 
 src/digest.o: src/digest.c.o
 .PHONY : src/digest.o
@@ -261,6 +335,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... client"
 	@echo "... client_control"
+	@echo "... client_shutdown"
+	@echo "... client_status"
 	@echo "... server"
 	@echo "... src/client.o"
 	@echo "... src/client.i"
@@ -268,6 +344,12 @@ help:
 	@echo "... src/client_control.o"
 	@echo "... src/client_control.i"
 	@echo "... src/client_control.s"
+	@echo "... src/client_shutdown.o"
+	@echo "... src/client_shutdown.i"
+	@echo "... src/client_shutdown.s"
+	@echo "... src/client_status.o"
+	@echo "... src/client_status.i"
+	@echo "... src/client_status.s"
 	@echo "... src/digest.o"
 	@echo "... src/digest.i"
 	@echo "... src/digest.s"

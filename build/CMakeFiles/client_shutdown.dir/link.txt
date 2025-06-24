@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/client_shutdown.dir/src/client_shutdown.c.o -o client_shutdown

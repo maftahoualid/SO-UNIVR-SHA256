@@ -1,0 +1,7 @@
+/home/wally/Documenti/GitHub/SO-UNIVR-SHA256/build/CMakeFiles/client.dir
+/home/wally/Documenti/GitHub/SO-UNIVR-SHA256/build/CMakeFiles/server.dir
+/home/wally/Documenti/GitHub/SO-UNIVR-SHA256/build/CMakeFiles/client_control.dir
+/home/wally/Documenti/GitHub/SO-UNIVR-SHA256/build/CMakeFiles/client_status.dir
+/home/wally/Documenti/GitHub/SO-UNIVR-SHA256/build/CMakeFiles/client_shutdown.dir
+/home/wally/Documenti/GitHub/SO-UNIVR-SHA256/build/CMakeFiles/edit_cache.dir
+/home/wally/Documenti/GitHub/SO-UNIVR-SHA256/build/CMakeFiles/rebuild_cache.dir

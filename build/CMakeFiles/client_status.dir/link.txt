@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/client_status.dir/src/client_status.c.o -o client_status

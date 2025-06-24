@@ -23,7 +23,7 @@ Il server è multi-processo, gestisce richieste concorrenti da parte dei client 
 ## Requisiti
 
 - **CMake ≥ 3.20**
-- **OpenSSL** (dev package, es: `libssl-dev` su Debian/Ubuntu)
+- **OpenSSL** (es: `libssl-dev` su Debian/Ubuntu)
 - **Sistema Unix-like** (Linux o macOS)
 
 ## Compilazione
@@ -63,7 +63,7 @@ Il server è multi-processo, gestisce richieste concorrenti da parte dei client 
 ./client_status
 ```
 
-### Arresto server *(opzionale, se `client_shutdown` è implementato)*
+### Arresto server 
 ```bash
 ./client_shutdown
 ```
@@ -84,7 +84,7 @@ Il server è multi-processo, gestisce richieste concorrenti da parte dei client 
 │   ├── digest.c
 │   ├── client_control.c
 │   ├── client_status.c
-│   └── client_shutdown.c (opzionale)
+│   └── client_shutdown.c
 ├── CMakeLists.txt
 └── README.md
 ```
@@ -92,7 +92,7 @@ Il server è multi-processo, gestisce richieste concorrenti da parte dei client 
 ## Esempio di output
 
 ```bash
-$ ./client test.txt
+$ ./client file1.txt
 SHA-256: 4a44dc15364204a80fe80e9039455cc1608281820fe2b24ad48e3be01f0f1e02
 
 $ ./client_status
@@ -103,7 +103,3 @@ $ ./client_status
 $ ./client_control 2
 [client_control] Nuovo limite richiesto: 2
 ```
-
-## Note
-
-- Il server pulisce automaticamente le risorse IPC alla chiusura (SIGINT/Ctrl+C).

@@ -1,0 +1,5 @@
+/home/wally/Documenti/sha256_project/CMakeFiles/client.dir
+/home/wally/Documenti/sha256_project/CMakeFiles/server.dir
+/home/wally/Documenti/sha256_project/CMakeFiles/client_control.dir
+/home/wally/Documenti/sha256_project/CMakeFiles/edit_cache.dir
+/home/wally/Documenti/sha256_project/CMakeFiles/rebuild_cache.dir

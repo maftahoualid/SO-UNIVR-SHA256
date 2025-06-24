@@ -1,4 +1,4 @@
-# SHA-256 Client-Server System (Progetto di Sistemi Operativi)
+# SHA-256 Client-Server System (Progetto didattico per il corso di **Sistemi Operativi** – Università di Verona)
 
 ## Descrizione
 
@@ -74,6 +74,9 @@ Il server è multi-processo, gestisce richieste concorrenti da parte dei client 
 ├── include/
 │   ├── common.h
 │   └── digest.h
+├── test
+    ├── file1.txt
+    └── file2.txt
 ├── src/
 │   ├── client.c
 │   ├── server.c
@@ -100,14 +103,6 @@ $ ./client_control 2
 [client_control] Nuovo limite richiesto: 2
 ```
 
-## Autori
-
-- Progetto didattico per il corso di **Sistemi Operativi** – Università di Verona
-- Studente: *[Tuo Nome Qui]*
-- Docente: *[Nome Docente, se richiesto]*
-
 ## Note
 
-- Assicurati che il server sia in esecuzione **prima** di inviare richieste dai client.
 - Il server pulisce automaticamente le risorse IPC alla chiusura (SIGINT/Ctrl+C).
-- Questo progetto può essere esteso facilmente per gestire altri algoritmi di hash, file di grandi dimensioni, o supporto TCP/IP.
